@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing Strategy: Chapter 12 Study Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6f5;--card:#fff;--ink:#12202b;--mut:#4d6270;--line:#cfdcd9;--tag:#ffd23f;--tagink:#12202b;--acc:#0f766e;--accsoft:#d5ece8}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1a20;--card:#16262e;--ink:#e8f1ef;--mut:#9fb5bd;--line:#2a3f49;--acc:#4fd1c0;--accsoft:#1b3b3b}}
+:root[data-theme=dark]{--bg:#0e1a20;--card:#16262e;--ink:#e8f1ef;--mut:#9fb5bd;--line:#2a3f49;--acc:#4fd1c0;--accsoft:#1b3b3b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,.sans,button,nav{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:4px;align-items:center;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;padding:6px 12px;border-radius:99px;font-size:15px;font-weight:500}
+nav a:hover,nav a.on{background:var(--acc);color:var(--bg)}
+nav button{margin-left:auto}
+main{max-width:980px;margin:auto;padding:0 18px 80px}
+section{padding:56px 0 8px}
+h2{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:0 0 6px;font-weight:800}
+h3{font-size:21px;margin:30px 0 10px}
+.lead{color:var(--mut);margin:0 0 22px;max-width:62ch}
+.hero{padding:60px 0 20px}
+.hero h1{font-size:clamp(40px,9vw,84px);line-height:.98;margin:0;font-weight:800;letter-spacing:-.03em}
+.price{display:inline-block;background:var(--tag);color:var(--tagink);padding:.05em .3em .12em;border-radius:.12em .4em .4em .12em;transform:rotate(-2deg);position:relative;margin:.1em 0}
+.price:before{content:"";position:absolute;left:.12em;top:50%;width:.16em;height:.16em;border-radius:50%;background:var(--bg);transform:translateY(-50%)}
+.price{padding-left:.5em}
+.hero p{font-size:20px;max-width:56ch;color:var(--mut)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h4{margin:0 0 6px;font:800 19px "Bricolage Grotesque",sans-serif}
+.card p{margin:0;font-size:15.5px;line-height:1.5}
+.flip{cursor:pointer;text-align:left;color:var(--ink);font:inherit;min-height:150px}
+.flip:hover{border-color:var(--acc)}
+.flip .hint{font:500 13px "Bricolage Grotesque",sans-serif;color:var(--acc);margin-top:10px}
+.flip.back{background:var(--acc);color:var(--bg)}.flip.back .hint{color:var(--bg)}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+button{font-size:15px;font-weight:500;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:99px}
+button:hover{border-color:var(--acc)}
+button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-height:120px}
+.panel h4{margin:0 0 8px;font:800 22px "Bricolage Grotesque",sans-serif}
+.panel ul{margin:8px 0 0;padding-left:20px}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0}
+.chain span{background:var(--accsoft);padding:6px 12px;border-radius:8px;font:500 15px "Bricolage Grotesque",sans-serif}
+.chain i{font-style:normal;color:var(--acc);font-weight:800}
+.chain.push i{color:#c2410c}
+.steps{counter-reset:s;display:grid;gap:8px}
+.steps button{text-align:left;border-radius:12px;display:flex;gap:12px;align-items:center;width:100%}
+.steps button:before{counter-increment:s;content:counter(s);width:26px;height:26px;flex:none;border-radius:50%;background:var(--accsoft);color:var(--ink);display:grid;place-items:center;font-size:13px;font-weight:800}
+.steps button.on:before{background:var(--tag);color:var(--tagink)}
+.split{display:grid;gap:14px;grid-template-columns:1fr 1.3fr}
+@media(max-width:700px){.split{grid-template-columns:1fr}}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:560px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:"Bricolage Grotesque",sans-serif;background:var(--accsoft)}
+svg text{font:600 12px "Bricolage Grotesque",sans-serif;fill:var(--ink)}
+.stage{fill:var(--accsoft);opacity:.35;transition:.3s}.stage.on{opacity:1;fill:var(--tag)}
+.q{margin:18px 0}.q p{font-weight:600;margin:0 0 8px}
+.q button{display:block;width:100%;text-align:left;border-radius:10px;margin:6px 0}
+.q button.ok{background:#15803d;color:#fff;border-color:#15803d}.q button.bad{background:#b91c1c;color:#fff;border-color:#b91c1c}
+.ex{font-size:14.5px;color:var(--mut);margin-top:8px}
+.score{font:800 28px "Bricolage Grotesque",sans-serif}
+footer{text-align:center;color:var(--mut);font-size:14px;padding:30px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#mix">Mix</a><a href="#product">Product</a><a href="#price">Price</a><a href="#place">Distribution</a><a href="#promo">Promotion</a><a href="#why">Why it matters</a><a href="#quiz">Quiz</a>
+<button id="theme" aria-label="Toggle dark mode">Dark / light</button>
+</nav>
+<main>
+<header class="hero">
+<h1>Marketing<br>strategy, <span class="price">priced</span><br>to learn.</h1>
+<p>Chapter 12 of <em>Business Foundation: A Changing World</em> (Ferrell, Hirt &amp; Ferrell), turned into a page you can click through. Tap the cards, tabs and steps, then test yourself at the bottom.</p>
+</header>
+
+<section id="mix">
+<h2>The marketing mix</h2>
+<p class="lead">The controllable decisions a company makes to win customers: product, price, distribution (place) and promotion. Tap each card to flip it.</p>
+<div class="grid" id="fourp"></div>
+<div class="panel" style="margin-top:14px"><ul style="margin:0">
+<li>It involves decisions about <b>controllable variables</b>.</li>
+<li>Good management of it gives a firm an <b>advantage over competitors</b>.</li>
+<li>Successful companies offer at least one dimension of the mix that stands out.</li>
+<li>Companies must keep <b>acceptable, distinguishable differences</b>.</li></ul></div>
+</section>
+
+<section id="product">
+<h2>Product strategy</h2>
+<p class="lead">How products are developed, classified, and identified.</p>
+<h3>Developing new products</h3>
+<p class="ex" style="margin-top:0">Click a step to see what happens in it.</p>
+<div class="split"><div class="steps" id="dev"></div><div class="panel" id="devp"></div></div>
+
+<h3>Classifying products</h3>
+<div class="grid" id="cls"></div>
+<div class="panel" style="margin-top:14px"><h4>Product line vs. product mix</h4>
+<p>A <b>product line</b> is a group of closely related products. A <b>product mix</b> is all the lines a company sells. Colgate-Palmolive’s mix has four lines: oral care, personal care, home care and pet nutrition. Oral care alone holds toothpaste, kids’ toothpaste and toothbrushes.</p></div>
+
+<h3>The product life cycle</h3>
+<div class="tabs" id="plct"></div>
+<div class="panel"><svg viewBox="0 0 400 170" width="100%" role="img" aria-label="Sales and profit curves across four life cycle stages">
+<rect class="stage" data-i="0" x="0" y="0" width="100" height="150"/><rect class="stage" data-i="1" x="100" y="0" width="100" height="150"/><rect class="stage" data-i="2" x="200" y="0" width="100" height="150"/><rect class="stage" data-i="3" x="300" y="0" width="100" height="150"/>
+<path d="M0 140 C60 138 90 120 130 80 S190 30 230 28 S330 50 400 85" fill="none" stroke="#2563eb" stroke-width="3"/>
+<path d="M0 152 C60 148 100 120 140 92 S185 72 230 74 S330 122 400 144" fill="none" stroke="#dc2626" stroke-width="3"/>
+<text x="130" y="55" fill="#2563eb">Sales volume</text><text x="250" y="110">Profit</text>
+<text x="25" y="166">Intro</text><text x="125" y="166">Growth</text><text x="225" y="166">Maturity</text><text x="325" y="166">Decline</text></svg>
+<div id="plcp"></div></div>
+
+<h3>Identifying products</h3>
+<div class="grid" id="idn"></div>
+</section>
+
+<section id="price">
+<h2>Pricing strategy</h2>
+<p class="lead">Price is probably the most flexible variable in the mix: it can be set or changed in a few minutes.</p>
+<h3>Calculating a product’s value</h3>
+<div class="chain" id="val"></div>
+<h3>Four common price objectives</h3>
+<div class="grid" id="obj"></div>
+<h3>Specific pricing strategies</h3>
+<div class="tabs" id="prt"></div><div class="panel" id="prp"></div>
+</section>
+
+<section id="place">
+<h2>Distribution strategy</h2>
+<p class="lead">Marketing channels make products available when and where customers want to buy them. <b>Middlemen</b> bridge the gap between manufacturer and consumer, creating <b>time, place and ownership utility</b>.</p>
+<h3>Channels for consumer products</h3>
+<div class="tabs" id="cht"></div><div class="panel" id="chp"></div>
+<h3>Types of retailers</h3>
+<div class="tw"><table id="ret"></table></div>
+<div class="grid" style="margin-top:14px" id="dist"></div>
+<h3>Intensity of market coverage</h3>
+<div class="grid" id="cov"></div>
+<h3>Physical distribution</h3>
+<div class="panel"><p><b>Logistics</b> moves products to customers. Physical distribution covers <b>transportation</b> (railways, motor vehicles, inland waterways, pipelines, airways), <b>warehousing</b> and <b>materials handling</b>. Transportation creates time and place utility.</p></div>
+<div class="panel" style="margin-top:14px"><h4>Why distribution matters</h4>Distribution decisions are among the <b>least flexible</b> in the mix: they commit resources and set contractual relationships that are slow to change. Online retailing has also raised customer expectations.</div>
+</section>
+
+<section id="promo">
+<h2>Promotion strategy</h2>
+<p class="lead">Promotion works best as <b>integrated marketing communications</b>: coordinating every element of the promotion mix so they act as one unified effort.</p>
+<div class="tabs" id="pmt"></div><div class="panel" id="pmp"></div>
+<h3>Push or pull?</h3>
+<div class="tabs"><button class="on" data-m="push">Push</button><button data-m="pull">Pull</button></div>
+<div class="panel" id="pp"></div>
+<h3>Objectives and positioning</h3>
+<div class="grid">
+<div class="card"><h4>Stimulate demand</h4><p>Create interest so customers want to buy.</p></div>
+<div class="card"><h4>Stabilize sales</h4><p>Smooth out seasonal ups and downs.</p></div>
+<div class="card"><h4>Inform, remind, reinforce</h4><p>Teach new buyers, keep the brand top of mind, and confirm good choices.</p></div>
+<div class="card"><h4>Promotional positioning</h4><p>Shaping how customers see your product relative to competitors.</p></div></div>
+</section>
+
+<section id="why">
+<h2>Why strategy matters</h2>
+<div class="panel"><ul style="margin:0">
+<li>Marketing creates value through the marketing mix.</li>
+<li>The four elements must be <b>carefully integrated</b> into one effective strategy.</li>
+<li>Companies with an effective mix gain a <b>competitive advantage</b>, often by excelling at one or more elements.</li>
+<li>Companies must <b>monitor demand</b> and adapt the mix when necessary.</li></ul></div>
+</section>
+
+<section id="quiz">
+<h2>Test yourself</h2>
+<p class="lead">Eight questions. Pick an answer to see why.</p>
+<div id="qs"></div><p class="score" id="sc"></p>
+</section>
+</main>
+<footer>Study guide based on Chapter 12 slides (McGraw-Hill Education). Some definitions are expanded from standard marketing textbooks.</footer>
+
+<script>
+const $=s=>document.querySelector(s),H=(el,h)=>el.innerHTML=h;
+const tabs=(tid,pid,items,fn)=>{const t=$(tid),p=$(pid);
+ const show=i=>{[...t.children].forEach((b,j)=>b.classList.toggle('on',i==j));H(p,items[i].h);fn&&fn(i)};
+ H(t,items.map((x,i)=>`<button>${x.t}</button>`).join(''));
+ [...t.children].forEach((b,i)=>b.onclick=()=>show(i));show(0)};
+const L=a=>'<ul>'+a.map(x=>`<li>${x}</li>`).join('')+'</ul>';
+const cards=(id,a)=>H($(id),a.map(x=>`<div class="card"><h4>${x[0]}</h4><p>${x[1]}</p></div>`).join(''));
+
+// 4 Ps flip cards
+const ps=[["Product","Goods, services or ideas, including branding, packaging and quality.","What you sell: how it is developed, classified and identified."],["Price","The amount charged. Probably the most flexible variable.","Can be set or changed in minutes. Objectives: profit, share, status quo, survival."],["Distribution","Getting products to customers when and where they want them.","Channels, middlemen, retailers, wholesalers, logistics. Least flexible variable."],["Promotion","Communicating with customers to stimulate demand.","Advertising, personal selling, publicity and sales promotion."]];
+H($('#fourp'),ps.map((p,i)=>`<button class="card flip" data-i="${i}"><h4>${p[0]}</h4><p>${p[1]}</p><div class="hint">Tap to flip</div></button>`).join(''));
+document.querySelectorAll('.flip').forEach(b=>b.onclick=()=>{const p=ps[b.dataset.i],f=b.classList.toggle('back');
+ H(b,`<h4>${p[0]}</h4><p>${f?p[2]:p[1]}</p><div class="hint">Tap to flip</div>`)});
+
+// product dev
+const dev=[["Idea development","Generate ideas from customers, employees, research and competitors."],["New idea screening","Filter out ideas that do not fit company goals or resources."],["Business analysis","Estimate demand, costs and profit potential before spending much."],["Product development","Build prototypes and check that the product can actually be made well."],["Test marketing","Launch in a limited area first. Some cities are permanent “data markets” (Boise, Provo, Tucson, Columbus…) and others are custom-picked for a test."],["Commercialization","Full-scale launch. Even big brands can misjudge fit: the slide shows Colgate Beef Lasagna, a frozen food from a toothpaste maker."]];
+H($('#dev'),dev.map(d=>`<button>${d[0]}</button>`).join(''));
+const dv=i=>{[...$('#dev').children].forEach((b,j)=>b.classList.toggle('on',i==j));H($('#devp'),`<h4>${dev[i][0]}</h4>${dev[i][1]}`)};
+[...$('#dev').children].forEach((b,i)=>b.onclick=()=>dv(i));dv(0);
+
+cards('#cls',[["Convenience products","Bought often, with little effort: snacks, gum, newspapers."],["Shopping products","Compared on price, quality and style before buying: clothing, appliances."],["Specialty products","Buyers insist on a specific brand and will make a special effort to get it: luxury watches, designer goods."]]);
+
+// PLC
+const plc=[["Introduction","Sales and profit are low (profit is negative). Heavy promotion to build awareness.","Ultra HD 4K TV, home assistants, hydrogen fuel cars"],["Growth","Sales climb quickly and profit rises. Competitors enter.","3D printers, Airbnb lodging sharing, paleo products"],["Maturity","Sales peak and level off. Profit peaks, then slips as competition intensifies.","Laptops, Disney theme parks, soft drinks"],["Decline","Sales and profit fall as customers move on.","Desktop computers, landline phones, print newspapers"]];
+tabs('#plct','#plcp',plc.map(x=>({t:x[0],h:`<p><b>${x[1]}</b></p><p class="ex">Examples from the textbook: ${x[2]}.</p>`})),i=>document.querySelectorAll('.stage').forEach(r=>r.classList.toggle('on',r.dataset.i==i)));
+
+cards('#idn',[["Branding","A <b>brand</b> is a name, term, symbol or design that identifies a product. The <b>brand name</b> is the part you can say; the <b>brand mark</b> is the symbol or logo. A <b>trademark</b> is legal protection for a brand."],["Types of brands","<b>Manufacturer brands</b> are owned by the producer. <b>Private distributor brands</b> are owned by a retailer or wholesaler. <b>Generic products</b> carry no brand."],["Packaging, labelling, quality","Packaging protects and promotes, labelling informs (and is regulated), and product quality is how well the product performs. The Cheerios shelf shows one brand with many package variants."]]);
+
+// pricing
+const vs=["Identify target customers","Identify their best alternative","Determine the product’s difference","Calculate value from its differentiation"];
+H($('#val'),vs.map((v,i)=>`<span>${i+1}. ${v}</span>`).join('<i>→</i>'));
+cards('#obj',[["Maximize profits","Set the price to earn the most possible."],["Boost market share","Price to win a bigger slice of the market."],["Maintain the status quo","Keep prices steady and avoid price wars."],["Survival","Price to cover costs and stay in business."]]);
+tabs('#prt','#prp',[
+{t:"New products",h:"<h4>Pricing new products</h4>"+L(["<b>Price skimming:</b> start high to earn from early adopters, then lower the price over time.","<b>Penetration pricing:</b> start low to win market share fast."])},
+{t:"Psychological",h:"<h4>Psychological pricing</h4>"+L(["<b>Even/odd pricing:</b> odd prices like $9.99 suggest a bargain; even prices suggest quality.","<b>Symbolic/prestige pricing:</b> a high price signals status and quality."])},
+{t:"Reference",h:"<h4>Reference pricing</h4><p>Pricing a product near a comparison product so customers judge it against that reference, such as a store brand placed next to a national brand.</p>"},
+{t:"Discounting",h:"<h4>Price discounting</h4>"+L(["<b>Quantity:</b> lower price for buying more.","<b>Seasonal:</b> lower price in off-season to keep sales steady.","<b>Promotional:</b> temporary cuts to attract buyers."])}]);
+
+// distribution
+const chs=[["A: Direct",["Producer","Consumers"]],["B: Retailer",["Producer","Retailers","Consumers"]],["C: Wholesaler",["Producer","Wholesalers","Retailers","Consumers"]],["D: Agent",["Producer","Agents","Wholesalers","Retailers","Consumers"]]];
+tabs('#cht','#chp',chs.map(c=>({t:c[0],h:`<div class="chain">${c[1].map(x=>`<span>${x}</span>`).join('<i>→</i>')}</div><p class="ex">${c[1].length-2||'No'} intermediar${c[1].length==3?'y':'ies'}. More than half of all business products are sold through direct channels.</p>`})));
+const rt=[["Department store","Large, full-service, organized by departments","Nordstrom, Macy’s, Neiman Marcus"],["Internet retailer","Direct marketer selling most products online","Amazon, Alibaba"],["Discount store","Fewer services; atmosphere reflects value pricing","Walmart, Stein Mart, Target"],["Convenience store","Small, self-service, items for immediate use","Circle K, 7-Eleven, Allsup’s"],["Supermarket","Large; most food plus nonfood for daily family use","Trader Joe’s, Albertsons, Wegman’s"],["Superstore","Very large; routinely purchased food and nonfood","Super Walmart, Meijer"],["Hypermarket","Largest; discount-store base with even more products","Carrefour, Tesco Extra"],["Warehouse club","Membership, food and nonfood, deep discounts","Costco, BJ’s, Sam’s Club"],["Warehouse showroom","Products displayed, retrieved from adjacent warehouse","IKEA, Cost Plus"]];
+H($('#ret'),'<tr><th>Type</th><th>Description</th><th>Examples</th></tr>'+rt.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join(''));
+cards('#dist',[["Retailers","Buy from manufacturers and sell to consumers for home and household use, adding place, time and ownership utility."],["Wholesalers","Buy in large quantities and sell to retailers in smaller ones. Types: <b>merchant wholesalers</b> (take ownership) and <b>agents</b>."],["Direct marketing &amp; selling","Producers reach consumers without retailers, through catalogs, online or person to person."],["Supply chain management","Long-term partnerships among channel members working together."]]);
+cards('#cov',[["Intensive","Sell in as many outlets as possible. Best for convenience products."],["Selective","Use a limited number of outlets. Common for shopping products."],["Exclusive","One outlet per area. Used for specialty and prestige products."]]);
+
+// promotion
+tabs('#pmt','#pmp',[
+{t:"Advertising",h:"<h4>Advertising</h4><p>Paid, non-personal communication through media. An <b>advertising campaign</b> is a series of coordinated ads with one theme.</p>"},
+{t:"Personal selling",h:"<h4>Personal selling</h4><p>Face-to-face (or direct) selling. Three kinds of salespersons: <b>order takers</b>, <b>creative salespersons</b> and <b>support salespersons</b>.</p><div class='chain'>"+["Prospecting","Approaching","Presenting","Handling objections","Closing","Following up"].map((x,i)=>`<span>${i+1}. ${x}</span>`).join('<i>→</i>')+"</div>"},
+{t:"Publicity",h:"<h4>Publicity</h4><p>The message appears as a news story, so the company is not seen as the originator. Many firms have a public relations department.</p>"+L(["Advertising calls for action; publicity rarely does.","Companies pay for advertising; publicity is free.","Advertising repeats often; publicity appears once."])+"<p><b>Buzz marketing:</b> trendsetters “talk up” a product. <b>Viral marketing:</b> customers pass the message along themselves.</p>"},
+{t:"Sales promotion",h:"<h4>Sales promotion</h4><p>Stimulates customer purchasing and increases dealer effectiveness.</p>"+L(["Store displays","Premiums","Samples and demonstrations","Coupons","Contests and sweepstakes","Refunds","Trade shows"])}]);
+const pm={push:["Producer","Wholesalers","Retailers","Consumers"],pull:["Consumers","Retailers","Wholesalers","Producer"]};
+const pt={push:"Promotion is aimed at the next channel member (often personal selling and trade promotion). Each member pushes the product toward the customer.",pull:"Promotion (usually advertising) is aimed at consumers, who ask retailers for the product, and retailers then order from wholesalers and the producer."};
+const setpp=m=>{H($('#pp'),`<div class="chain ${m}">${pm[m].map(x=>`<span>${x}</span>`).join('<i>'+(m=='push'?'→ push':'← pull')+'</i>')}</div><p>${pt[m]}</p>`);document.querySelectorAll('[data-m]').forEach(b=>b.classList.toggle('on',b.dataset.m==m))};
+document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>setpp(b.dataset.m));setpp('push');
+
+// quiz
+const Q=[["Which step comes right after business analysis in product development?",["Test marketing","Product development","Commercialization"],1,"Order: idea development, idea screening, business analysis, product development, test marketing, commercialization."],
+["Profit peaks and then slips while sales level off. Which life cycle stage?",["Growth","Maturity","Decline"],1,"In maturity, sales peak and competition squeezes profit."],
+["Starting with a high price to earn from early adopters is…",["Penetration pricing","Reference pricing","Price skimming"],2,"Skimming starts high; penetration starts low."],
+["A retailer’s own label (e.g., a store brand) is a…",["Manufacturer brand","Private distributor brand","Generic product"],1,"Private distributor brands are owned by retailers or wholesalers."],
+["Which distribution coverage suits a prestige specialty product?",["Intensive","Selective","Exclusive"],2,"Exclusive distribution limits outlets to protect image and service."],
+["Which marketing mix decisions are the LEAST flexible?",["Price","Distribution","Promotion"],1,"Distribution commits resources and contracts that are slow to change."],
+["Advertising to consumers so they demand the product from stores is a…",["Pull strategy","Push strategy","Exclusive strategy"],0,"Pull creates consumer demand that travels back up the channel."],
+["Which is true of publicity?",["It is paid and repeated","It is usually free and appears once","It always calls for action"],1,"Publicity is presented as news, is free, and rarely calls for action."]];
+let score=0,done=0;
+H($('#qs'),Q.map((q,i)=>`<div class="q" data-i="${i}"><p>${i+1}. ${q[0]}</p>${q[1].map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}<div class="ex"></div></div>`).join(''));
+document.querySelectorAll('.q').forEach(d=>{const q=Q[d.dataset.i];d.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+ if(d.dataset.d)return;d.dataset.d=1;done++;const j=+b.dataset.j;if(j==q[2])score++;
+ d.querySelectorAll('button').forEach((x,k)=>{if(k==q[2])x.classList.add('ok');else if(x==b)x.classList.add('bad')});
+ d.querySelector('.ex').textContent=q[3];
+ if(done==Q.length)$('#sc').textContent=`Score: ${score} / ${Q.length}`+(score==Q.length?' Perfect.':score>5?' Nice work.':' Review the sections above and try again.')})});
+
+// theme + nav highlight
+$('#theme').onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue('--bg').trim()=='#0e1a20';r.dataset.theme=d?'light':'dark'};
+const links=[...document.querySelectorAll('nav a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section').forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
